@@ -1,0 +1,111 @@
+<html>
+<head>
+<title> FATIN </title>
+<link rel="stylesheet" href="assest/css/style.css">
+</head>
+<body>
+
+
+<ul>
+  <li><a class="active" href="index.html"><img src="assest/icon/home.png" width="27px"></a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="family.html">Family</a></li>
+  <li><a href="education.html">Education</a></li>
+  <li><a href="friends.html">Friends</a></li>
+  <li><a href="favourite.html">Favourite</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+</ul>
+
+<br>
+
+<marquee>
+<h1> WELCOME TO MY WEBSITE!!</h1>
+</marquee>
+
+<!--- INSERTING TABLE --->
+
+<table width ="100%" border = "0" align="center">
+<tr>
+
+<td align="center">
+<img src="assest/image/assalam.png" align="top" width="500px"> 
+
+
+</td>
+
+</tr>
+
+</table>
+
+<br><br><br>
+
+<!--- INSERTING VIDEO --->
+
+<center>
+<video controls width="95%" autoplay muted loop >
+<source src="assest/video/opening.mp4" type="video/mp4">
+</video>
+</center>
+
+<br><br><br><br>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+</head>
+<body>
+
+<p>Hover over the image:</p>
+<img src="assest/image/ay alt="Pineapple" width="300" height="300">
+
+
+<!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="assest/image/ayah.jpeg" alt="Nature" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assest/image/umi.jpeg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assest/image/ayah.jpeg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assest/image/umi.jpeg" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+</body>
+</html>
